@@ -4,7 +4,7 @@ mod app;
 
 fn main() {
     let mut stack = Stack::new();
-    let input = "10 5 + .s .";
+    let input = "10 5 + .s \"hello world\" .";
     let tokens = parse(input);
 
     if let Err(e) = execute(tokens, &mut stack) {
